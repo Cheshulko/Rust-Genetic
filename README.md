@@ -13,3 +13,8 @@ A system of step-by-step visualization for the each step of population generatio
 ```
 cargo run ./config0.csv ./cities0.csv > ./output0.csv
 ```
+
+# To plot
+```
+python3 plot.py ./cities0.csv ./output0.csv
+```
