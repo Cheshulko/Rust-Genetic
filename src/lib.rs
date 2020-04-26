@@ -23,8 +23,6 @@ pub fn select_parents<'a>(w: &[f64], solutions: &'a [Solution]) -> (&'a Solution
     (&solutions[mom_index], &solutions[dad_index])
 }
 
-// max_by_key: Ord not implemented for f64
-// current_population.iter().max_by_key(|i| i.fitness_value).unwrap().clone()
 pub fn find_fittest(current_population: &[Solution]) -> Solution {
 
     let mut best_individual = &current_population[0];
@@ -61,19 +59,3 @@ pub fn random_population(size_of_population: usize, cities: &[CityPoint]) -> Vec
     } 
     solutions
 }
-
-/*
-
------------------------------
-ALTERNATIVE SELECT INDEX FUNCTION
------------------------------
-
-fn choose_ind(weights: &[f64]) -> usize {
-    let w_sum = weights.last().unwrap();
-    let mut i = weights.len() - 2;
-    let r: f64 = thread_rng().gen_range(0.0, *w_sum);
-    while weights[i] > r { i -= 1 }
-    i
-}
-
-*/

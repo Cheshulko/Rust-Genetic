@@ -1,0 +1,9 @@
+[package]
+name = "Rust-Genetics"
+version = "1.0.0"
+
+[dependencies]
+rand = "0.5.2"
+s
+[profile.dev]
+opt-level = 2sss
