@@ -20,3 +20,7 @@ python3 plot.py ./cities0.csv ./output0.csv
 ```
 
 ![](pict/Video.gif)
+
+# License
+
+MIT
